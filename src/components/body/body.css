@@ -9,8 +9,7 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  padding: 20px;
   font-family: "Raleway", sans-serif;
   background-color: var(--main-bg);
   color: var(--text-color);
@@ -35,7 +34,7 @@ h1 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 400;
   text-align: left;
   max-width: var(--max-width);
