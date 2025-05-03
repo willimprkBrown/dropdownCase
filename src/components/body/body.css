@@ -1,80 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap");
+
+:root {
+  --main-bg: #white;
+  --text-color: #000;
+  --heading-border: #000;
+  --caption-color: #555;
+  --max-width: 900px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  background-color: var(--main-bg);
+  color: var(--text-color);
+}
+
 .body {
-    text-align: center;
-    padding: 20px;
-    background-color: antiquewhite;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--main-bg);
 }
 
 h1 {
-    margin-top: 30px;
-    border-bottom: 2px solid black;
-    padding-bottom: 10px;
-    text-align: left;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  text-align: left;
+  border-bottom: 2px solid var(--heading-border);
+  width: 100%;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
 }
 
 p {
-    font-size: 18px;
-    font-weight: 400;
-    text-align: left;
-}
-
-.carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    position: relative;
-}
-
-.carousel-image {
-    text-align: center;
-}
-
-.carousel img {
-    max-width: 500px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.caption {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #555;
-    text-align: center;
-    max-width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-.carousel-btn {
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    margin: 0 10px;
-    padding: 5px;
-    position: absolute;
-}
-
-.left {
-    margin-right: 70%;
-}
-
-.right {
-    margin-left: 70%;
-}
-
-.carousel-btn:hover {
-    color: gainsboro;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  max-width: var(--max-width);
+  margin: 20px auto;
+  line-height: 1.6;
 }
 
 ul {
-    text-align: left;
-    padding-left: 20px;
+  text-align: left;
+  padding-left: 40px;
+  max-width: var(--max-width);
+  margin: 20px auto;
 }
 
 li {
-    text-align: left;
+  text-align: left;
+  margin-bottom: 10px;
 }
 
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  position: relative;
+  max-width: 700px;
+}
 
+.carousel-image {
+  text-align: center;
+}
+
+.carousel img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+  margin-top: 10px;
+  font-size: 16px;
+  color: var(--caption-color);
+  text-align: center;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.carousel-btn:hover {
+  color: #bbb;
+}
+
+.left {
+  left: -40px;
+}
+
+.right {
+  right: -40px;
+}
