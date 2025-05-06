@@ -75,8 +75,9 @@ const Body = () => {
         deals with inputs and what outputs are shown. Notepad will be the main
         focus of the study. State models for mouse and keyboard interactions
         will be shown, revised, and discussed. Then, a revised component will be
-        designed and discussed, improving on the initial design. Finally, there
-        will be a reflection on Kat Holmes’ Inclusive Design video.
+        designed and discussed, improving on the initial design to create a more
+        practical, clean, and consistent solution. Finally, there will be a
+        reflection on Kat Holmes’ Inclusive Design video.
       </p>
       <h1>Case 1: Google Docs</h1>
       <Carousel images={[docs1, docs2, docs3]} captions={docsCaptions} />
